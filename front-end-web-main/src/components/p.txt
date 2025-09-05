@@ -1,0 +1,178 @@
+  "peon": [
+        {
+            "x": 0,
+            "y": 1,
+            "color": "blancas"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "color": "blancas"
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "color": "blancas"
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "color": "blancas"
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "color": "blancas"
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "color": "blancas"
+        },
+        {
+            "x": 6,
+            "y": 1,
+            "color": "blancas"
+        },
+        {
+            "x": 7,
+            "y": 1,
+            "color": "blancas"
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "color": "negras"
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "color": "negras"
+        },
+        {
+            "x": 2,
+            "y": 6,
+            "color": "negras"
+        },
+        {
+            "x": 3,
+            "y": 6,
+            "color": "negras"
+        },
+        {
+            "x": 4,
+            "y": 6,
+            "color": "negras"
+        },
+        {
+            "x": 5,
+            "y": 6,
+            "color": "negras"
+        },
+        {
+            "x": 6,
+            "y": 6,
+            "color": "negras"
+        },
+        {
+            "x": 7,
+            "y": 6,
+            "color": "negras"
+        }
+       
+    ],
+    "alfil": [
+        {
+            "x": 2,
+            "y": 0,
+            "color": "blancas"
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "color": "blancas"
+        },
+        {
+            "x": 2,
+            "y": 7,
+            "color": "negras"
+        },
+        {
+            "x": 5,
+            "y": 7,
+            "color": "negras"
+        }
+    ],
+    "caballo": [
+        {
+            "x": 1,
+            "y": 0,
+            "color": "blancas"
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "color": "blancas"
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "color": "negras"
+        },
+        {
+            "x": 6,
+            "y": 7,
+            "color": "negras"
+        }
+    ],
+    "torre": [
+        {
+            "x": 0,
+            "y": 0,
+            "color": "blancas",
+            "lado": "izquierda"
+        },
+        {
+            "x": 7,
+            "y": 0,
+            "color": "blancas",
+            "lado": "derecha"
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "color": "negras",
+            "lado": "derecha"
+        },
+        {
+            "x": 7,
+            "y": 7,
+            "color": "negras",
+            "lado": "izquierda"
+        }
+    ],
+    "dama": [
+        {
+            "x": 3,
+            "y": 0,
+            "color": "blancas"
+        },
+        {
+            "x": 3,
+            "y": 7,
+            "color": "negras"
+        }
+    ],
+    "rey": [
+        {
+            "x": 4,
+            "y": 0,
+            "color": "blancas"
+        },
+        {
+            "x": 4,
+            "y": 7,
+            "color": "negras"
+        }
+    ]
+}

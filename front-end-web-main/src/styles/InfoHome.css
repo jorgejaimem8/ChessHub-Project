@@ -1,0 +1,112 @@
+/* GameModesHome.css */
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+.infoHome-background {
+  background-color: #506C64;
+  border-radius: 10px;
+  height: 80%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  overflow-y: auto;
+  transition: height 0.5s ease;
+}
+
+/* Estilo del contenedor del titulo */
+.infoHome-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Anta", sans-serif;
+  font-size: xx-large;
+  text-decoration: underline;
+}
+
+/* Estilo del contenedor de los modos de juego */
+.infoHome-boxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+  padding: 10px;
+  margin-top: 1%;
+}
+.infoHome-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: solid 1px #000;
+  border-radius: 30px;
+  overflow: auto;
+}
+.infoHome-boxTitle {
+  color: #fff;
+  font-weight: bold;
+  font-size: x-large;
+}
+.infoHome-boxText {
+  color: #fff;
+  font-size: large;
+  margin-top: 5px;
+  text-align: justify;
+}
+
+/* Estilo del contenedor de "Quienes somos" */
+.infoHome-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin-top: 2%;
+}
+.infoHome-bottomTitle {
+  font-family: "Anta", sans-serif;
+  font-size: 32px;
+  color: #fff;
+}
+.infoHome-bottomText{
+  width: 50vw;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  margin-top: 2%;
+}
+
+/* Gestión de componentes según el tamaño de la ventana */
+@media only screen and (max-width: 1100px){
+  .infoHome-boxContainer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .infoHome-box{
+    width: 90%;
+    margin-top: 2%;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .infoHome-background {
+    height: 70%;
+  }
+}
+@media only screen and (max-height: 600px) {
+  .infoHome-background {
+    height: 60%;
+  }
+}
+@media only screen and (max-height: 500px) {
+  .infoHome-background {
+    display: none;
+  }
+}

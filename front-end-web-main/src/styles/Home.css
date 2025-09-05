@@ -1,0 +1,64 @@
+.Home {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: url('../images/background.jpg') no-repeat center/cover;
+}
+
+.appbar {
+  width: 100%;
+  height: 10%;
+}
+
+.cuerpo-home{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.side {
+  background-color: #f0f0f0;
+}
+
+.middle {
+  /* height: 100%;
+  width: 100%; */
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-recuadros {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.profile-home{
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.795);
+}
+
+/* Gestión de componentes según el tamaño de la ventana */
+@media only screen and (max-width: 600px) {
+  .middle {
+    display: none;
+  }
+}
+@media only screen and (max-width: 510px) {
+  .cuerpo-home {
+    display: none;
+  }
+}

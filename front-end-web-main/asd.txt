@@ -1,0 +1,16 @@
+Partidas
+* Juega partidas en modo local contra la máquina o en modo online contra otros usuarios. 
+* Existen tres modos de juego, Blitz, Bullet y Rapid. Estos se diferencian en el límite de tiempo para jugar.
+* Al jugar partidas se te otrorgarán puntos de recompensa independientemente de si has ganado o perdido la partida.
+* También podrás ganar o perder puntos de ELO en función de si ganas o pierdes partidas.
+
+Elo
+* Los puntos de ELO se utilizan para categorizar a los jugadores.
+* Gana partidas para conseguir gran cantidad de puntos de ELO y jugar contra los mejores jugadores!
+* Al incrementar tu puntuación de ELO, jugarás en distintos ambientes de tableros llamados Arenas
+* Puedes entrar en el apartado de "Ranking" para consultar quienes son los mejores jugadores en cada modo de juego
+
+Puntuacion
+* Los puntos de recompensa se ganan independientemente de si ganas o pierdes partidas.
+* Con estos puntos puedes acceder al apartado de "Pase de batalla" para reclamar recompensas asombrosas
+* Para poder utilizar las recompensas desbloqueadas en partida, accede al apartado de "Personalizacion"

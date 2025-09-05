@@ -1,0 +1,247 @@
+/* Fichero de estilos para BattlePass.jsx */
+.background-battlePass {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background: url('../images/background.jpg') no-repeat center/cover;
+}
+
+/* Formato del sidebar cuando está cerrado */
+.sideBattlepass {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  background-color: #fff;
+  transition: left 0.7s ease;
+}
+/* Formato del sidebar cuando está abierto */
+.sideBattlepass.open {
+  left: 0;
+}
+
+.titleBattlePass {
+  width: 100%;
+  height: 15%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Formato del botón de apertura del sidebar cuando este no se está mostrando */
+.sideMenuButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  visibility: visible;
+  transform: translate(30px, 30px);
+  background-color: transparent;
+  opacity: 1;
+  transition: opacity 0.7s ease; 
+}
+/* Formato del botón de apertura del sidebar cuando este se está mostrando */
+.sideMenuButton.hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  visibility: visible;
+  transform: translate(30px, 30px);
+  background-color: transparent;
+  opacity: 0; /* Opacity when hidden */
+}
+
+.pageTitleBattlepass {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Anta", sans-serif;
+  font-size: 24px;
+  padding: 25px 30px;
+  font-weight: 600;
+  font-style: normal;
+  background-color: #ff8e0d;
+  border: solid 1px #fff;
+  border-radius: 8px;
+  /* transform: translateY(-90%); */
+}
+
+.battlePass-container{
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Recuadro en verde que contiene el battlepass*/
+.battlePass-container.center{
+  width: 80%;
+  height: 70%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  background-color: #506C64;
+}
+
+/* Contenedor del las recompensas */
+.recompensas{
+  width: 75vw;
+  height: 35vh;
+  border: solid 2px black;
+  border-radius: 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+/* Mensaje de puntos del usuario */
+.infoPuntos {
+  padding: 6px 10px;
+  border-radius: 4pc;
+  border: solid 2px white;
+  background-color: transparent;
+}
+
+.imagenBattlePass {
+  width: 65px;
+  height: 65px;
+}
+/* Mensajes de cada uno de los niveles */
+.infoRecompensa{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.battlePasslist {
+  padding: 0;
+  margin: 0;
+  height: 92%;
+  padding-top: 7px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  background-color: #2e294e;
+}
+
+.battlePasslist > li{
+  width: 200px;
+  height: 105%;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.items{
+  width: 200px;
+  height: 100%;
+  color: white;
+  margin-right: 5px;
+  font-weight: bolder;
+  box-sizing: border-box;
+  border: solid 1px white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: background-color 1s ease;
+}
+.items.itemLocked {
+  background-color: #E71D36;
+}
+.items.itemUnlocked {
+  background-color: #007cbe;
+}
+.items.itemClaimed {
+  background-color: #429e69;
+}
+
+/* Botón para reclamar individualmente las recompensas */
+.claim-button {
+  background-color: #ff8e0d; 
+  border: none;
+  color: #fff;
+  padding: 10px 10px; 
+  font-size: 12px; 
+  cursor: pointer;
+  outline: none;
+  border-radius: 8px; 
+  box-shadow: 0 0 15px #ff8e0d; /* Initial box-shadow */
+  transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+}
+.claim-button:hover {
+  box-shadow: 0 0 30px #ff8e0d; /* Box-shadow when hovered */
+}
+.claim-button:active,
+.claim-button:focus {
+  outline: none;
+  box-shadow: 0 0 30px #ff8e0d; /* Box-shadow when active/focused */
+}
+.claim-button:disabled:hover {
+  cursor: not-allowed;
+}
+
+/* Botón para reclamar todas las recompensas */
+.claim-all-button{
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 10px;
+  font-size: 16px;
+  background-color: #ff8e0d;
+  box-shadow: 0 0 15px #ff8e0d; /* Initial box-shadow */
+  transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+}
+.claim-all-button:hover {
+  box-shadow: 0 0 30px #ff8e0d; /* Box-shadow when hovered */
+}
+.claim-all-button:active,
+.claim-all-button:focus {
+  outline: none;
+  box-shadow: 0 0 30px #ff8e0d; /* Box-shadow when active/focused */
+}
+
+/* Gestión de componentes según el tamaño de la ventana */
+@media only screen and (max-width: 450px) {
+  .pageTitleBattlepass {
+    display: none;
+  }
+}
+@media only screen and (max-width: 560px){
+  .infoPuntos{
+    display: none;
+  }
+}
+@media only screen and (max-width: 280px){
+    .battlePass-container {
+    display: none;
+  }
+}
+@media only screen and (max-height: 550px){
+  .battlePass-container {
+    display: none;
+  }
+}
+@media only screen and (max-height: 550px){
+  .pageTitleBattlepass {
+    display: none;
+  }
+}

@@ -1,0 +1,13 @@
+/* Casilla.css */
+.casilla-base {
+    height: 100%;
+    width: 100%;
+
+    border: none;
+    transition: background-color 0.3s; 
+    /* Agregamos una transición suave */
+}
+
+.casilla-base:hover{
+    background-color: aqua;
+}

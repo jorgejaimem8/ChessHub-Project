@@ -1,0 +1,180 @@
+{
+    "peones": [
+        {
+            "x": 0,
+            "y": 1,
+            "color": "blanca"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "color": "blanca"
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "color": "blanca"
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "color": "blanca"
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "color": "blanca"
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "color": "blanca"
+        },
+        {
+            "x": 6,
+            "y": 1,
+            "color": "blanca"
+        },
+        {
+            "x": 7,
+            "y": 1,
+            "color": "blanca"
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "color": "negra"
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "color": "negra"
+        },
+        {
+            "x": 2,
+            "y": 6,
+            "color": "negra"
+        },
+        {
+            "x": 3,
+            "y": 6,
+            "color": "negra"
+        },
+        {
+            "x": 4,
+            "y": 6,
+            "color": "negra"
+        },
+        {
+            "x": 5,
+            "y": 6,
+            "color": "negra"
+        },
+        {
+            "x": 6,
+            "y": 6,
+            "color": "negra"
+        },
+        {
+            "x": 7,
+            "y": 6,
+            "color": "negra"
+        }
+    ],
+    "alfiles": [
+        {
+            "x": 2,
+            "y": 0,
+            "color": "blanca"
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "color": "blanca"
+        },
+        {
+            "x": 2,
+            "y": 7,
+            "color": "negra"
+        },
+        {
+            "x": 5,
+            "y": 7,
+            "color": "negra"
+        }
+    ],
+    "caballos": [
+        {
+            "x": 1,
+            "y": 0,
+            "color": "blanca"
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "color": "blanca"
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "color": "negra"
+        },
+        {
+            "x": 6,
+            "y": 7,
+            "color": "negra"
+        }
+    ],
+    "torres": [
+        {
+            "x": 0,
+            "y": 0,
+            "color": "blanca"
+        },
+        {
+            "x": 7,
+            "y": 0,
+            "color": "blanca"
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "color": "negra"
+        },
+        {
+            "x": 7,
+            "y": 7,
+            "color": "negra"
+        }
+    ],
+    "damas": [
+        {
+            "x": 3,
+            "y": 0,
+            "color": "blanca"
+        },
+        {
+            "x": 3,
+            "y": 7,
+            "color": "negra"
+        }
+    ],
+    "reyes": [
+        {
+            "x": 4,
+            "y": 0,
+            "color": "blanca"
+        },
+        {
+            "x": 4,
+            "y": 7,
+            "color": "negra"
+        }
+    ]
+}
+
+
+
+
+
+

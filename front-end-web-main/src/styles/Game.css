@@ -1,0 +1,247 @@
+/* Game.css */
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+/* Fondo */
+.gameBackground {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #312D2D;
+}
+
+/* Formato del sidebar cuando está cerrado */
+.sideGame {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  background-color: #fff;
+  transition: left 0.7s ease;
+}
+/* Formato del sidebar cuando está abierto */
+.sideGame.open {
+  left: 0;
+}
+
+.titleGame {
+  width: 100%;
+  height: 10%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* Formato del botón de apertura del sidebar cuando este no se está mostrando */
+.sideMenuButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  visibility: visible;
+  transform: translate(30px, 30px);
+  background-color: transparent;
+  opacity: 1;
+  transition: opacity 0.7s ease; 
+}
+/* Formato del botón de apertura del sidebar cuando este se está mostrando */
+.sideMenuButton.hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  visibility: visible;
+  transform: translate(30px, 30px);
+  background-color: transparent;
+  opacity: 0; /* Opacity when hidden */
+}
+.pageTitleGame {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Anta", sans-serif;
+  font-size: 24px;
+  padding: 25px 30px;
+  font-weight: 600;
+  font-style: normal;
+  background-color: #ff8e0d;
+  border: solid 1px #fff;
+  border-radius: 8px;
+}
+
+/* Formato para situar el tablero y los cuadros informativos */
+.game {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+.gameScreen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tableroGame {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.gameComponents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* PopUps */
+.gamePopupBackground {
+  background-color: transparent;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gamePopup {
+  width: 600px;
+  height: 300px;
+  border: solid 2px black;
+  border-radius: 16px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.63);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: #ff8e0d;
+}
+
+/* Botones de los popUps */
+.gamePopupButtons {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.gamePopupButt {
+  width: 125px;
+  height: 50px;
+  color: white;
+  font-size: 24px;
+  border-radius: 8px;
+  font-weight: bolder;
+  cursor: pointer;
+  background-color: #506C64;
+  transition: 0.4s ease;
+}
+
+/* Información de la partida */
+.gameInfo {
+  width: 42vw;
+  margin: 5px; 
+  border: solid 1px white;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #7ca15a;
+  transition: width 0.5s ease;
+  /* overflow: auto; */
+}
+.gameInfo.players {
+  width: 35%;
+  font-weight: bolder;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gameInfo.players.name {
+  width: 100%;
+  font-weight: bolder;
+}
+.gameInfo.players.color {
+  font-weight: bold;
+  width: 100%;
+  font-size: 16px;
+}
+.gameInfo.timer {
+  width: 30%;
+  font-weight: bold;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gameInfo.eaten{
+  width: 35%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Gestión de componentes según el tamaño de la ventana */
+@media only screen and (max-width: 1400px) {
+  .gameInfo {
+    width: 50vw;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .gameInfo {
+    width: 65vw;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .gameInfo {
+    width: 75vw;
+  }
+} 
+@media only screen and (max-width: 600px) {
+  .gameInfo {
+    width: 85vw;
+  }
+}
+@media only screen and (max-width: 515px) {
+  .gameInfo {
+    display: none;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .pageTitleGame {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 725px){
+  .game {
+    height: 100%;
+  }
+}
+@media only screen and (max-height: 780px){
+  .pageTitleGame {
+    display: none;
+  }
+}
+@media only screen and (max-height: 640px) {
+  .gameInfo {
+    display: none;
+  }
+}

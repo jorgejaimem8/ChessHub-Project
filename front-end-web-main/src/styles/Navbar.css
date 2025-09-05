@@ -1,0 +1,104 @@
+/* Navbar.css */
+/* fuente */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.navbar {
+    background-color: #1F1F1F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Mantiene el titulo a la izquierda y el avatar a la derecha*/
+    padding: 20px;
+}
+
+/* Título del navbar */
+.navbar-title{
+    /* Fuente y color para el titulo */
+    color: #FFFFFF;
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+}
+
+/* Avatar del usuario */
+.navbar-user-button {
+    background-color: transparent;
+    border: none;
+    margin-right: 30px; /* Desplaza el avatar del usuario a la izquierda */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    /* padding: 14px; */
+}
+.navbar-user-button>svg {
+  margin-right: 20px;
+}
+
+.navbar-login-button{
+    color: #FFFFFF;
+    padding: 10px;
+    margin-right: 40px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+/* Estilos para el menú desplegable */
+.MuiMenu-paper {
+  background-color: #333;
+  color: white;
+}
+
+.MuiMenu-list {
+  padding: 0;
+}
+
+.MuiMenuItem-root {
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.MuiMenuItem-root:hover {
+  background-color: #555;
+}
+
+/* Estilos para el avatar del usuario en el menú */
+.MuiAvatar-root {
+  margin-right: 10px;
+}
+
+/* Estilos para el icono de notificaciones */
+.MuiSvgIcon-root {
+  cursor: pointer;
+}
+
+/* Estilos para el contenido del menú de notificaciones */
+#notifications-menu {
+  margin-top: 10px; /* Ajustar según necesidad */
+  width: 200px; /* Ajustar según necesidad */
+}
+
+
+.menu-item {
+  width: 70px;
+  padding: 15px 30px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border-bottom: 4px solid #ddd;
+}
+.menu-item-notificado{
+  width: 70px;
+  padding: 15px 30px;
+  cursor: pointer;
+  background-color: #908b8b;
+  border-bottom: 4px solid #ddd;
+}
+
+.menu-item-notificado:hover {
+  background-color: #bcb2b2;
+}
+
+@media only screen and (max-width : 510px){
+  .menu-item {
+    display: none;
+  }
+}

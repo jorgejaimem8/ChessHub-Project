@@ -1,0 +1,96 @@
+/* Fichero de estilos para Login.jsx */
+.mainContainerLogin {
+  height: 100vh;
+  width: 100vw;
+  background: url('../images/background.jpg') no-repeat center/cover;
+}
+
+.wrapperLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Título de "ChessHub" */
+.titleLogin {
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 25px;
+}
+
+/* Boton "ChessHub" */
+.titleButtonLogin {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.formLogin {
+  background-color: #506C64;
+  width: 600px;
+  height: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #FFFFFF;
+  transition: width 0.5s ease;
+}
+
+/* Título del form */
+.formTitleLogin{
+  font-size: 30px;
+}
+
+.formLogin input {
+  padding: 15px;
+  border-radius: 1 solid;
+}
+
+.registrateLogin {
+  cursor: pointer;
+}
+
+/* Ajustes de tamaño de los componentes en función del tamaño de la ventana */
+@media only screen and (max-width : 650px)  {
+  .formLogin {
+    width: 400px;
+  }
+}
+@media only screen and (max-width : 450px)  {
+  .formLogin {
+    width: 300px;
+  }
+}
+@media only screen and (max-width : 325px) {
+  .formLogin{
+    display: none;
+  }
+  .titleLogin {
+    display: none;
+  }
+}
+@media only screen and (max-height : 430px)  {
+  .formLogin {
+    display: none;
+  }
+}
+@media only screen and (max-height : 130px)  {
+  .titleLogin {
+    display: none;
+  }
+}
+.error-message {
+  background-color: rgb(214, 33, 33);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
