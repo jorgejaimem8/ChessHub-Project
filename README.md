@@ -10,7 +10,7 @@ El repositorio está organizado en varios módulos:
 
 | Módulo / Carpeta | Lenguaje / Tecnología | Propósito principal |
 |------------------|------------------------|----------------------|
-| `backend-main` | C++ / (¿alguna lib específica?) | Lógica del servidor, API, gestión de partidas y reglas de ajedrez |
+| `backend-main` | C++ | Lógica del servidor, API, gestión de partidas y reglas de ajedrez |
 | `front-end-app-main` | Dart / Flutter (o similar) | Interfaz de aplicación móvil / escritorio para los usuarios |
 | `front-end-web-main` | JavaScript / CSS / HTML | Interfaz web para acceder desde navegador |
 
@@ -31,14 +31,3 @@ Estas son algunas de las funcionalidades que ofrece (o que planeas implementar):
 - Versión web + aplicación móvil / cliente
 
 ---
-
-## 🛠 Instalación y uso
-
-A continuación un esquema básico de cómo construir / levantar el proyecto:
-
-### Requisitos
-
-- Compilador de C++ moderno (por ejemplo, GCC o Clang)  
-- Node / npm / yarn (para el frontend web)  
-- SDK de Flutter / Dart (para el front-end app), si aplicable  
-- Bases de datos o persistencia (por ejemplo, SQLite, PostgreSQL, o lo que hayas elegido)  
